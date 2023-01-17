@@ -1,0 +1,12 @@
+P.special {
+  color : black;
+  border: solid gray;
+  }
+h1.punk{
+  color: black;
+  border:solid green;
+  border-width: 5;
+  width: 5cm;
+  background-color: red;
+}  
+

@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JvaScript Example</title>
+</head>
+<body>
+   <script lang="JavaScript">
+        document.write("Here is my output...<br>")
+
+       /*EXAMPLE 2 -  var x=20,y=30;
+        var sum=x+y;
+        var big=x>y?x:y
+        document.write(x+"+"+y+"="+sum)
+        document.write("<br>large="+big)*/
+
+      /* EXAMPLE 3 -  var x=23,mssg=""
+        if(x%2==0){
+               mssg="Even";   
+        }else{
+            mssg="odd";
+        }
+        document.write(x+" is "+mssg)*/
+       
+       /* EXAMPLE 4 - var i=4,mssg="";
+        switch(i){
+            case 2:
+                mssg="Two";
+                break;
+            case 3:
+                mssg="Three";
+                break;
+            default:
+                mssg="Default";
+        }
+      document.write(mssg) */
+
+     /* EXAMPLE 5 - var i,j;
+      for(i=5;i>0;i--){
+        for(j=1;j<=i;j++)
+           document.write(i);
+           document.write("<br>")
+     }*/
+
+     /* EXAMPLE 6 - var num=234
+     var count=0
+     do{
+        count++;
+        num/=10;
+     }while(num>1);
+     document.write(count);*/
+    
+    /* EXAMPLE 7 - var num=234;
+     var sum=0;
+     var digit;
+     while(num>0){
+         digit=num%10;
+         sum+=digit;
+         num=parseInt(num/10);
+     }
+     document.write(sum);*/
+
+    /* EXAMPLE 8 - function gcd(m,n){
+        return n>0?gcd(n,m%n):m;
+     }
+     document.write(gcd(9,3))*/
+    
+     /* EXAMPLE 9 - var adult=confirm("You Certify that you are over 18 Years Old?")
+     if(adult){
+        alert("Eligible...")
+     }else{
+        alert("Not Eligible...")
+     }*/
+
+    /* EXAMPLE 10 - var entry=prompt("Enter a number between 1 and 10 : ")
+     if(entry>0 && entry<11){
+         alert("Entry...")
+     }else{
+        alert(null)
+     }*/
+
+     /* EXAMPLE 11 - function round(num){
+        return Math.round(num)
+     }
+     document.write (round(234.447))*/
+
+    /* EXAMPLE 12 - alpha="ABCDEFGHIJKLMNOPRSTUVWXYZ"
+     sort=alpha.substring(0,2)
+    document.write(sort)
+     sort2=alpha.substring(4,5)
+     //document.write(sort2)*/
+
+     var s="Hello";
+     var s1=s.blink();
+     var s2=s1.blink();
+     var s3=s2.bold();
+     document.write(s3);
+     document.write(s2);
+     document.write(s1);
+
+
+     
+</script>
+</body>
+</html>
