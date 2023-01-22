@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onLoad and UnLoad Example</title>
+</head><body>
+<!--EXAMPLE - 18 <body onload="window.alert('Hello and welcome to this page...');"
+onunload="window.alert('You unloaded the page,GoodBye...');">    
+<h1>The onload and unload methods...</h1>
+<hr size="2">This page displays a "Hello" dialog when you load it,and a "GoodBye" dialog when you unload it.Annoying,isn't it? 
+<h4>This is done through event handlers... -->
+ 
+   <!-- /* <form name="st">
+        <input type="text"size="50"name="input1"><br>
+        <input type="button" value="change" onclick="window.status=document.st.input1.value;">
+    </form> -->
+    <form>
+           <input type="text" onchange="if(parseInt(this.value)<=5){alert('Please enter a number greater than 5.');}">
+    </form>
+
+</body>
+<!-- EXMPLE 19 - <script lang="JavaScript">
+      function tot(){
+            var x=parseInt(document.simple.first.value)
+            var y=parseInt(document.forms[0].elements[1].value)
+            document.simple.sum.value=x+y
+         }
+         
+        </script>
+    <form name="simple">
+            <input type="text"size="4"name="first"value=""><br>
+            <input type="text"size="4"name="second"value=""><br>
+            <input type="button"value="Click"onClick="tot();"><br>
+            <input type="text"name="sum"value=""><br>
+        </form> -->
+    
+</html>
