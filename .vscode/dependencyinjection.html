@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function shoe(){
+        this.getshoedetails=function(){
+            return this.details;
+        }
+    }
+    function sportsshoe(details){
+        this.details=details;
+    }
+    function leathershoe(details){
+        this.details=details;
+    }
+    shoe=new shoe();
+    sportsshoe.prototype=shoe;
+    sportsshoe.prototype.constructor=sportsshoe;
+    leathershoe.prototype=shoe;
+    leathershoe.prototype.constructor=leathershoe;
+
+    function shoeshop(){
+        this.getshoedetails=function(){
+            return this.details;
+        }
+        this.sellshoe=function(){
+            return factory.makeshoe();
+        }
+    }
+    function rahimshop(details,factory){
+        this.details=details;
+        this.factory=factory;
+    }
+    function ramshop(details,factory){
+        this.details=details;
+        this.factory=factory; 
+    }
+
+    shop=new shoeshop();
+    rahimshop.prototype=shop;
+    rahimshop.prototype.constructor=rahimshop;
+    ramshop.prototype=shop;
+    ramshop.prototype.constructor=ramshop;
+
+    function shoefactory(){
+        this.getshoedetails=function(){
+            return this.details;
+        }
+    }
+    function batashoefactory(details){
+        this.details=details;
+        this.makeshoe=function(){
+            return new leathershoe();
+        }
+    }
+    function lakhanishoefactory(details){
+        this.details=details;
+        this.makeshoe=function(){
+            return new sportsshoe();
+        }
+    }
+
+    shoefactory=new shoefactory();
+    rahimshop.prototype=shoefactory;
+    batashoefactory.prototype.constructor=batashoefactory;
+    lakhanishoefactory.prototype=shoefactory;
+    lakhanishoefactory.prototype.constructor=lakhanishoefactory;
+
+     function createshop(shopname){
+        
+     }
+</script>
+<body>
+    
+</body>
+</html>

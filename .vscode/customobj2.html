@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //POPULAR WAY FOR CREATING OBJECTS
+    function human(name){
+        this.name=name;
+        this.display=display;
+        this.getname=function(){
+            return this.name;
+        }
+    }
+    function display(){
+        console.log("Coming from display function : "+this.getname())
+    }
+    var irs=new human("Irsath");
+    console.log(irs.getname());
+    console.log(irs.display());
+    
+</script>
+<body>
+    
+</body>
+</html>

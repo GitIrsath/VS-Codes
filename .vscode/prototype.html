@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script>
+       function human(name){
+            this.name=name;
+       }
+       human.prototype.getname=function(){
+        return this.name;
+       }
+       irsath=new human("chi chi chi");
+       console.log(irsath.getname())
+
+       irs=new irsath.constructor("psu psu psu");
+       console.log(irs.getname())
+
+    </script>
+</body>
+</html>

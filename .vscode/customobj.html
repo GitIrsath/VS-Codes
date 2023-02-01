@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //CONSTRUCTOR OBJECT
+    var obj=new Object();
+    obj.name="This is my name property..."
+    obj.getname=function(){
+          return this.name
+    }
+     for(i in obj){
+        console.log(i)
+    }
+    console.log("Property is : "+obj.getname())
+
+    //LITERAL NOTATION
+    var obj2={
+        name:"Irsath",
+        getname:function(){
+            return this.name
+        }
+    }
+    console.log("Literal : "+obj2.getname())
+
+    //FACTORY FUNCTION
+    var obj3=function(){
+        var obj=new Object();
+        obj.name="Chipsu"
+        obj.getname=function(){
+            return this.name
+        };
+        return obj;
+    };
+    var o=obj3();
+    console.log("Factory : "+o.getname());
+
+    //FACTORY-LITERAL WAY
+     var obj4=function(name){
+         return{
+            name:name,
+            getname:function(){
+                return this.name;
+            }
+         }
+     };
+     var oo=obj4("Chipsuuuuuuuuuuuuuu")
+     console.log("Factory-Literal : "+oo.getname())
+</script>
+<body>
+    
+
+</body>
+</html>
